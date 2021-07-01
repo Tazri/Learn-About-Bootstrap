@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Order</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aliceblue;
+        }
+
+        .container{
+            background-color: rgb(0, 136, 255);
+        }
+
+        .one{
+            background-color: brown;
+        }
+
+        .two{
+            background-color: aliceblue;
+        }
+
+        .three{
+            background-color: blueviolet;
+        }
+
+        .four{
+            background-color: chartreuse;
+        }
+
+        .five{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container py-2 px-4">
+        <div class="row">
+            <div class="col-3 one p-5 text-center order-last">one</div>
+            <div class="col-3 two p-5 text-center order-3">two</div>
+            <div class="col-3 three p-5 text-center">three</div>
+            <div class="col-3 four p-5 text-center order-first">four</div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-3 one p-5 text-center order-md-last">one</div>
+            <div class="col-3 two p-5 text-center order-md-3">two</div>
+            <div class="col-3 three p-5 text-center">three</div>
+            <div class="col-3 four p-5 text-center order-md-first">four</div>
+        </div>
+    </div>
+
+</body>
+</html>

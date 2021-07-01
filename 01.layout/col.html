@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Cols</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aliceblue;
+        }
+
+        .container{
+            border: 1px solid aqua;
+        }
+
+        .row{
+            border: 1px solid rgb(0, 136, 255);
+        }
+
+        .col,.div,.col-md,.col-lg{
+            border: 1px solid brown;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-2 px-3 my-2">
+        <div class="row">
+            <div class="col">col one</div>
+            <div class="col">col two</div>
+            <div class="w-100"></div>
+            <div class="col text-center">col three</div>
+            <div class="w-100"></div>
+            <div class="col text-center">col four</div>
+        </div>
+        
+        <div class="row row-cols-4 py-4 my-2">
+            <div class="div">one</div>
+            <div class="div">two</div>
+            <div class="div">three</div>
+            <div class="div">five</div>
+            <div class="div">six</div>
+        </div>
+
+        <div class="row my-3 py-2">
+            <div class="col-md">md one</div>
+            <div class="col-md">md two</div>
+            <div class="col-lg">lg one</div>
+            <div class="col-lg">lg two</div>
+        </div>
+    </div>
+
+</body>
+</html>

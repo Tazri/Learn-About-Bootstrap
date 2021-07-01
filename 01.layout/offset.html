@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Offset</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: aliceblue; 
+            border: 2px solid rgb(0, 136, 255);
+        }
+
+        .row{
+            border: 2px solid brown;
+        }
+
+        .div{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container py-2 px-3">
+        <!-- row -->
+        <div class="row">
+            <div class="col-4 offset-3 div">
+                <h1>This is col 4</h1>
+            </div>
+        </div>
+
+        <!-- row -->
+        <div class="row my-2">
+            <div class="col-md-6 offset-md-2 div">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, officiis a molestiae dolor mollitia voluptas debitis maiores, officia fugiat veritatis et repellat ex quisquam. Optio natus ipsam quam deleniti dignissimos!lorem50
+            </div>
+            <div class="col-md-4">
+                this is col md 4
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

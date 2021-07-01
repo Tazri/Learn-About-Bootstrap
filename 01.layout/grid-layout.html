@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .header{
+            background-color: brown;
+        }
+
+        .nav{
+            background-color: cadetblue;
+        }
+
+        main{
+            background-color: rgb(0, 136, 255);
+        }
+
+        article{
+            color: aliceblue;
+        }
+
+        article h2{
+            color: brown;
+        }
+
+        .menu{
+            background-color: brown;
+        }
+
+        footer{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- start container -->
+    <div class="container">
+        <!-- start header -->
+        <div class="row py-2 px-3 header">
+            <h1 class="text-center text-light">This is header</h1>
+        </div>
+        <!-- end header -->
+
+        <!-- start nav -->
+        <div class="nav row text-success">
+            <h3>This is nav</h3>
+        </div>
+        <!-- end nav -->
+
+        <!-- start content part -->
+        <main class="row">
+            <!-- start article -->
+            <article class="col-md-8 col-xl-10 py-2">
+                <h2>This is article header</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, nisi eligendi? Dolorem aperiam pariatur qui illum dolore. Dolorum magni ducimus reiciendis? Suscipit autem laudantium necessitatibus odio a, nihil minus fugit doloribus quis aperiam sunt quisquam minima totam repellat, eveniet reprehenderit!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum dolore consequuntur molestias doloribus, quam ducimus tempora voluptatibus ad sint aliquid temporibus commodi consectetur, dolores possimus! Laborum ipsam facere ex rem et explicabo hic quasi velit ipsa praesentium? Possimus dolore cumque<br /> aspernatur eligendi ullam. Tempore quae provident libero? Neque corporis est aliquid quae asperiores sunt adipisci obcaecati. Id modi, laboriosam vitae ad repellendus neque sapiente ullam numquam inventore beatae minima natus eligendi aperiam nam repellat, a quasi ratione, tenetur corrupti quas. Ab expedita repellat corrupti eveniet mollitia ducimus, vero corporis consectetur alias harum repudiandae quos nesciunt adipisci architecto iure ullam tempora!
+                </p>
+            </article>
+            <!-- end article -->
+
+            <!-- start side menu -->
+            <aside class="col-md-4 col-xl-2 py-2 menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Work</li>
+                    <li>Contact</li>
+                </ul>
+            </aside>
+            <!-- end side menu -->
+        </main>
+        <!-- end content part-->
+
+        <!-- start footer -->
+        <footer class="row py-2 text-center">
+            <h3>This is footer</h3>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap-grid.min.css" integrity="sha512-LLxZHu50SXdFJdAzHmDJAoLaozhTB4BYZPoN+xdTRjiPmPhI+1mEJXdoHHiDWmd/jj/9x10pkd8mYGG9sqfPPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Margin</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+
+        .container{
+            background-color: rgb(0, 136, 255);
+        }
+
+        .one{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container py-2">
+        <div class="row">
+            <div class="col-3 one text-center text-light m-auto">m-auto</div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-3 one text-center text-light mr-auto">mr-auto</div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-3 one ml-auto text-light">ml-auto</div>
+        </div>
+    </div>
+
+    <div class="container py-2">
+        <div class="row">
+            <div class="col-3 one text-center text-light m-md-auto">m-md-auto</div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-3 one text-center text-light mr-md-auto m-lg-auto">mr-md-auto</div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-3 one text-center text-light ml-md-auto">ml-md-auto</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
