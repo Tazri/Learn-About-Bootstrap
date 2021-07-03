@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Vertical Alignment</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: aliceblue;
+        }
+
+        .container{
+            border: 2px solid rgb(0, 136, 255);
+            height: 400px;
+        }
+
+        .row{
+            height: 100%;
+        }
+
+        .col{
+            background: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container my-3 py-3 px-4">
+        <div class="row align-items-start">
+            <div class="col">one</div>
+            <div class="col">two</div>
+            <div class="col">three</div>
+        </div>
+    </div>
+
+    <div class="container my-3 py-3 px-4">
+        <div class="row align-items-center">
+            <div class="col">one</div>
+            <div class="col">two</div>
+            <div class="col">three</div>
+        </div>
+    </div>
+
+    <div class="container my-3 py-3 px-4">
+        <div class="row align-items-end">
+            <div class="col">one</div>
+            <div class="col">two</div>
+            <div class="col">three</div>
+        </div>
+    </div>
+
+    <div class="container my-3 py-3 px-4">
+        <div class="row">
+            <div class="col align-self-start">one</div>
+            <div class="col align-self-center">two</div>
+            <div class="col align-self-end">three</div>
+        </div>
+    </div>
+
+    <div class="container my-3 py-3 px-4">
+        <div class="row">
+            <div class="col align-self-md-start">one</div>
+            <div class="col align-self-md-center">two</div>
+            <div class="col align-self-md-end">three</div>
+        </div>
+    </div>
+
+    <div class="container my-3 py-3 px-4">
+        <div class="row align-items-md-end align-items-center">
+            <div class="col">one</div>
+            <div class="col">two</div>
+            <div class="col">three</div>
+        </div>
+    </div>
+</body>
+</html>

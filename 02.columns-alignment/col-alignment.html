@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Col Alignment</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: aliceblue;
+        }
+
+        .container{
+            border: 2px solid #0088ff;
+        }
+
+        .div{
+            background: burlywood;
+            border: 2px solid coral;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container p-3 bg-light my-2">
+        <div class="row">
+            <div class="div col-auto">one</div>
+            <div class="div col-auto ms-auto">two</div>
+        </div>
+    </div>
+
+</body>
+</html>

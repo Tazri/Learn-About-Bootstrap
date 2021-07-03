@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Margin Advance</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: aliceblue;
+        }
+
+        .container{
+            height: 500px;
+            background-color: rgb(0, 136, 255)
+        }
+
+        .row{
+            height: 100%;
+            border: 3px solid aliceblue;
+        }
+
+        .col{
+            background: brown;
+            border: 1px solid aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container py-2 px-3">
+        <div class="row row-cols-3 align-items-center my-2">
+            <div class="col mx-2">mx-2</div>
+            <div class="col mt-5">two</div>
+            <div class="col ms-md-5">ms-md-5</div>
+            <div class="col ">col ms-auto me-n5</div>
+        </div>
+    </div>
+
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
