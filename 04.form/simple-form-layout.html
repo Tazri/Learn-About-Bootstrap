@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Simple Form Layout</title>
+</head>
+<body>
+    <!-- start form -->
+    <form class="row p-5 g-3 needs-validation" novalidate>
+        <!-- email and password -->
+        <!-- email -->
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" name="emaill" id="email" class="form-control" placeholder="Email" required>
+            <div class="valid-feedback">
+                Looks Good! :)
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Your Email :(
+            </div>
+        </div>
+
+        <!-- password -->
+        <div class="col-md-6">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+            <div class="vaild-feedback">
+                looks good! :)
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Your Password :(
+            </div>
+        </div>
+        <!-- end email and password -->
+
+        <!-- start address input -->
+        <div class="col-12">
+            <label for="address-one" class="form-label">Address One</label>
+            <input type="text" name="address" id="address-one" class="form-control" placeholder="Bangladesh, Comilla E.P.Z" required>
+            <div class="valid-feedback">
+                looks good! :)
+            </div>
+
+            <div class="invalid-feedback">
+                Please Enter Your First Address :(
+            </div>
+        </div>
+
+        <div class="col-12">
+            <label for="address-two" class="form-label">Address Two</label>
+            <input type="text" name="address" id="address-two" class="form-control" placeholder="Bangladesh, Comilla E.P.Z" required>
+            <div class="valid-feedback">
+                looks good! :)
+            </div>
+
+            <div class="invalid-feedback">
+                Please Enter Your Secound Address :(
+            </div>
+        </div>
+        <!-- end address input -->
+
+        <!-- start address details -->
+        <div class="col-md-6">
+            <label for="city" class="form-label">City</label>
+            <input type="text" name="city" id="city" placeholder="city" class="form-control" required>
+
+            <div class="valid-feedback">
+                looks good! :)
+            </div>
+
+            <div class="invalid-feedback">
+                Please Enter Your City Name :(
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <select name="state" id="state" class="form-select" required>
+                <option>Choose</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+                <option value="four">Four</option>
+                <option value="five">Five</option>
+            </select>
+
+            <div class="valid-feedback">
+                looks good! :)
+            </div>
+
+            <div class="invalid-feedback">
+                Please Select Your State :(
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" id="zip" class="form-control" required>
+            <div class="valid-feedback">
+                looks good! :)
+            </div>
+
+            <div class="invalid-feedback">
+                Please Enter Your Zip Code :(
+            </div>
+        </div>
+        <!-- end address details -->
+
+        <!-- start check box -->
+        <div class="col-12">
+            <div class="form-check form-switch">
+                <input type="checkbox" id="agreement" class="form-check-input" required>
+                <label for="agreement" class="form-check-label">Are you agree your point ?</label>
+                <div class="valid-feedback">
+                    looks good! :)
+                </div>
+
+                <div class="invalid-feedback">
+                    Please Agree Our Point :(
+                </div>
+            </div>
+        </div>
+        <!-- end check box -->
+
+        <!-- button -->
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+        </div>
+    </form>
+    <!-- end form -->
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
