@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>form</title>
+</head>
+<body>
+    
+    <div class="container my-3 border border-primary p-3">
+        <label for="email" class="form-label">Email Adrees</label>
+        <input 
+            type="email" 
+            class="form-control" 
+            id="email" 
+            placeholder="name@example.com">
+
+            <label for="textarea" class="form-label mt-3">Write the message</label>
+            <textarea class="form-control" name="textarea" id="textarea" rows="3"></textarea>
+    </div>
+
+    <div class="container my-3 border border-danger p-3">
+        <input 
+            type="text"
+            class="form-control form-control-lg"
+            placeholder="form-control form-control-lg"
+            >
+
+        <input 
+            type="text"
+            class="form-control my-4"
+            placeholder="form-control">
+
+        <input 
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="form-control-sm">
+    </div>
+
+    <div class="container my-3 border border-info p-3">
+        <input 
+            type="text"
+            class="form-control mb-3"
+            placeholder="disabled"
+            disabled>
+
+        <input 
+            type="text"
+            class="form-control mb-3"
+            placeholder="disabled and readonly"
+            value="disabled and readonly"
+            disabled
+            readonly>
+
+        <input 
+            type="text"
+            class="form-control mb-3"
+            placeholder="readonly"
+            value="readonly"
+            readonly>
+    </div>
+
+    <div class="container my-3 p-3 border border-primary">
+        <div class="row mb-3">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input 
+                    type="text" 
+                    id="email" 
+                    value="mdtazri@gmail.com"
+                    class="form-control-plaintext"
+                    >
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input 
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    >
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

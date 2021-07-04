@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Floating Labels</title>
+</head>
+<body>
+    
+    <div class="container my-3 p-3 border border-primary">
+        <div class="form-floating">
+            <input type="text" class="form-control" placeholder="example@server.com">
+            <label class="from-label">Email</label>
+        </div>
+
+        <div class="form-floating mt-3">
+            <input type="text" class="form-control is-invalid" placeholder="example@server.com">
+            <label class="form-label">Email</label>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-danger rounded">
+        <div class="form-floating">
+            <textarea class="form-control" rows="10" placeholder="comment"></textarea>
+            <label for="comment">Comment</label>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-danger rounded">
+        <div class="form-floating">
+            <select class="form-select">
+                <option selected>Choose Your OS</option>
+                <option value="mac">Mac</option>
+                <option value="windows">Windows</option>
+                <option value="ubuntu">Ubuntu</option>
+                <option value="solus">Solus</option>
+                <option value="deepin">Deepin</option>
+            </select>
+            <label for="os">Choose your os</label>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-warning rounded">
+        <div class="row g-3">
+            <div class="col-md">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="example@server.com">
+                    <label class="form-label">Email</label>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option selected>choose Your OS</option>
+                        <option value="mac">Mac</option>
+                        <option value="window">Window</option>
+                        <option value="mint">Mint</option>
+                        <option value="solus">Solus</option>
+                        <option value="ubuntu">Ubuntu</option>
+                    </select>
+                    <label class="form-label">Choose your os</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

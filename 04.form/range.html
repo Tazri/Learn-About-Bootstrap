@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Range</title>
+</head>
+<body>
+    <div class="container p-3 my-3 border border-warning rounded">
+        <label for="range-one" class="form-label">Range one</label>
+        <input type="range" name="range" id="range-one" class="form-range">
+        
+        <label for="range-two" class="form-label">Range Two</label>
+        <input type="range" name="range" id="range-two" class="form-range" disabled>
+
+        <label for="range-three" class="form-label">Range Three</label>
+        <input type="range" name="range" min='0' max="5" id="range-three" class="form-range">
+
+        <label for="range-four" class="form-label">Range Four</label>
+        <input type="range" name="range" step="3" id="range-four" class="form-range">
+    </div>
+</body>
+</html>

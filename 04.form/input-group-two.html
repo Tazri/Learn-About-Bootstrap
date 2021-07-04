@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>input-group-dorpdown and select, file</title>
+</head>
+<body>
+    
+    <div class="container my-3 p-3 border border-warning rounded">
+        <div class="input-group">
+            <button 
+                class="btn btn-outline-primary dropdown-toggle" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">Drowdown</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a href="#" class="dropdown-item">Action</a></li>
+                <li><a href="#" class="dropdown-item">Action Two</a></li>
+                <li><a href="#" class="dropdown-item">Action Three</a></li>
+                <li><a href="#" class="dropdown-item">Action Four</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a href="#" class="dropdown-item">Another link</a></li>
+            </ul>
+
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-warning rounded">
+        <div class="input-group">
+            <button class="btn btn-outline-primary">Action</button>
+            <button 
+                class="btn btn-outline-primary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"></button>
+            
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a href="#" class="dropdown-item">action</a></li>
+                <li><a href="#" class="dropdown-item">action</a></li>
+                <li><a href="#" class="dropdown-item">action</a></li>
+                <li><a href="#" class="dropdown-item">action</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">another link</a></li>
+            </ul>
+
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-warning rounded">
+        <div class="input-group">
+            <button class="btn btn-secondary">option</button>
+            <select class="form-select">
+                <option selected>Select your os</option>
+                <option value="mac">Mac</option>
+                <option value="windows">Windows</option>
+                <option value="mint">Mint</option>
+                <option value="ubuntu">Ubuntu</option>
+            </select>
+        </div>
+
+        <div class="input-group mt-3">
+            <label for="option" class="input-group-text">Options</label>
+            <select class="form-select" id="option">
+                <option selected>Choose Color</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="aliceblue">Aliceblue</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-danger rounded">
+        <div class="input-group">
+            <input id="file" type="file" class="form-control">
+            <label for="file" class="input-group-text">Upload</label>
+        </div>
+    </div>
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

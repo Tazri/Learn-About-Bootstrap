@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Check And Radio</title>
+</head>
+<body>
+    
+    <div class="container border border-warning p-3 my-3">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="java" value="">
+            <label for="java" class="form-check-label">Java</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="script" value="">
+            <label for="script" class="form-check-label">script</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="swift" value="" disabled>
+            <label for="swift" class="form-check-label">Swift</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="swift" value="" checked disabled>
+            <label for="swift" class="form-check-label">Swift</label>
+        </div>
+    </div>
+
+    <div class="container p-3 my-3 border border-primary">
+        <div class="form-check">
+            <input type="radio" name="gender" id="male" class="form-check-input">
+            <label for="male" class="form-check-label">Male</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" name="gender" id="female" class="form-check-input">
+            <label for="female" class="form-check-label">Female</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" name="gender" id="other" class="form-check-input" disabled>
+            <label for="other" class="form-check-label">other</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" name="gender" id="none" class="form-check-input" disabled checked>
+            <label for="none" class="form-check-label">none</label>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-dark rounded">
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-one">
+            <label for="check-one" class="form-check-label">1</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-two">
+            <label for="check-two" class="form-check-label">2</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-three">
+            <label for="check-three" class="form-check-label">3</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="check-four" disabled>
+            <label for="check-four" class="form-check-label">4(disable)</label>
+        </div>
+    </div>
+
+    <div class="container p-3 my-3 border border-danger">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="alpha" id="a" class="form-check-input">
+            <label for="a" class="form-check-label">A</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" name="alpha" id="b" class="form-check-input">
+            <label for="b" class="form-check-label">B</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" name="alpha" id="c" class="form-check-input">
+            <label for="c" class="form-check-label">C</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" name="alpha" id="d" class="form-check-input" disabled>
+            <label for="d" class="form-check-label">D</label>
+        </div>
+    </div>
+
+</body>
+</html>

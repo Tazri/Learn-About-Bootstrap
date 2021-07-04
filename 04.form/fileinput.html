@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>File input</title>
+</head>
+<body>
+    
+    <div class="container p-3 my-3 border border-primary">
+        <div class="mb-3">
+            <label for="formfile" class="form-label">Default file input example</label>
+            <input 
+                type="file"
+                id="formfile"
+                class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="formfile" class="form-label">multiple</label>
+            <input 
+                type="file"
+                id="formfile"
+                class="form-control"
+                multiple>
+        </div>
+
+        <div class="mb-3">
+            <label for="formfile" class="form-label">form control disable</label>
+            <input 
+                type="file"
+                id="formfile"
+                class="form-control"
+                disabled>
+        </div>
+
+        <div class="mb-3">
+            <label for="formfile" class="form-label">form control sm</label>
+            <input 
+                type="file"
+                id="formfile"
+                class="form-control form-control-sm">
+        </div>
+
+        <div class="mb-3">
+            <label for="formfile" class="form-label">form control lg</label>
+            <input 
+                type="file"
+                id="formfile"
+                class="form-control form-control-lg">
+        </div>
+    </div>
+
+    <div class="container my-3 p-3">
+        <label for="color" class="form-label">Color Picker</label>
+        <input 
+            type="color" 
+            name="color" 
+            id="color"
+            class="form-control form-control-color"
+            value="#0088FF">
+    </div>
+
+    <div class="container my-3 p-3 border border-primary">
+        <label for="datalist" class="form-label">Data List</label>
+        <input 
+            type="text"
+            name="datalist"
+            id="datalist"
+            list="listofoption"
+            class="form-control form-control-sm">
+
+        <datalist id="listofoption">
+            <option value="black"></option>
+            <option value="I am programmer"></option>
+            <option value="Hy universe"></option>
+            <option value="Do you know me."></option>
+        </datalist>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Input Group</title>
+</head>
+<body>
+    
+    <div class="container my-3 p-3 border border-warning rounded">
+
+        <div class="input-group">
+            <label for="username" class="input-group-text">@</label>
+            <input type="text" class="form-control" placeholder="username" id="username">
+        </div>
+
+        <div class="input-group my-3">
+            <input type="text" name="firstname" class="form-control" placeholder="First Name">
+            <span class="input-group-text">Name</span>
+            <input type="text" name="lastname"class="form-control" placeholder="Last Name">
+        </div>
+
+        <div class="input-group my-3">
+            <span class="input-group-text">$</span>
+            <input type="text" name="dolar" id="dolar" placeholder="Enter the dolar" class="form-control">
+            <span class="input-group-text">00.00</span>
+        </div>
+
+        <div class="input-group my-3">
+            <span class="input-group-text">Please Enter Your Comment.</span>
+            <textarea name="comment" id="comment"  rows="3" class="form-control" placeholder="Please Enter Your Commnet"></textarea>
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-danger rounded">
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text">No Wrap</span>
+            <input type="text" class="form-control" placeholder="no wrap">
+        </div>
+
+        <div class="input-group my-3">
+            <span class="input-group-text">Without No Wrap</span>
+            <input type="text" class="form-control" placeholder="Without no wrap">
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-primary rounded">
+        <div class="input-group input-group-sm">
+            <span class="input-group-text">input-group-sm</span>
+            <input type="text" placeholder="input group sm" class="form-control">
+        </div>
+
+        <div class="input-group my-3">
+            <span class="input-group-text">input-group</span>
+            <input type="text" placeholder="input group" class="form-control">
+        </div>
+
+        <div class="input-group input-group-lg">
+            <span class="input-group-text">input group lg</span>
+            <input type="text" class="form-control" placeholder="input group lg">
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-info rounded">
+        <div class="input-group">
+            <div class="input-group-text">
+                <input type="checkbox" name="check" id="check" class="form-check-input mt-0">
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-text">
+                <input type="radio" name="check" id="check" class="form-check-input mt-0">
+            </div>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="container my-3 p-3 border border-danger rounded">
+        <div class="input-group">
+            <button class="btn btn-outline-danger">Button</button>
+            <input type="text" class="form-control">
+            <button class="btn btn-outline-primary">Buttons</button>
+        </div>
+    </div>
+
+</body>
+</html>
