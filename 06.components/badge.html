@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Badge</title>
+</head>
+<body>
+    
+    <div class="container my-3 p-3 border border-warning rounded-3">
+        <p class="h1">This is badge <span class="badge bg-primary">new</span></p>
+        <p class="h2">This is badge <span class="badge bg-dark">new</span></p>
+        <p class="h3">This is badge <span class="badge bg-light text-dark">new</span></p>
+        <p class="h4">This is badge <span class="badge bg-success">new</span></p>
+        <p class="h5">This is badge <span class="badge bg-danger">new</span></p>
+    </div>
+
+    <div class="container my-3 p-3 border border-danger rounded-3">
+        <button class="btn btn-primary position-relative">
+            Inbox
+            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">
+                99+
+            </span>
+        </button>
+
+        <button class="mx-3 btn btn-primary position-relative">
+            Inbox 
+            <span class="badge bg-danger p-2 position-absolute top-0 start-100 translate-middle rounded-circle border border-light">
+
+            </span>
+        </button>
+    </div>
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

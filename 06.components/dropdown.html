@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Dropdown</title>
+</head>
+<body>
+    
+    <div class="container p-3 my-3 border border-danger rounded-3">
+        <div class="dropdown d-inline">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">DropDwon</button>
+
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Window</a></li>
+                <li><a href="#" class="dropdown-item">Mac</a></li>
+                <li><a href="#" class="dropdown-item">Linux</a></li>
+                <li><a href="#" class="dropdown-item">Android</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown mx-3 d-inline">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Windows</li>
+                <li class="dropdown-item">Mac</li>
+                <li class="dropdown-item">Linux</li>
+                <li class="dropdown-item">Android</li>
+                <li class="dropdown-item">Iphone</li>
+            </ul>
+        </div>
+
+        <!-- i can do with btn-group -->
+        <div class="btn-group my-3">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Comilla</li>
+                <li class="dropdown-item">Dhaka</li>
+                <li class="dropdown-item">Rongpur</li>
+                <li class="dropdown-item">Shyllet</li>
+            </ul>
+        </div>
+
+        <div class="dropdown mb-3">
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Windows</li>
+                <li class="dropdown-item">Mac</li>
+                <li class="dropdown-item">Linux</li>
+                <li class="dropdown-item">Android</li>
+                <li class="dropdown-item">Iphone</li>
+            </ul>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-danger">Danger</button>
+
+            <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"></button>
+
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Eren</li>
+                <li class="dropdown-item">Zike</li>
+                <li class="dropdown-item">Armin</li>
+                <li class="dropdown-item">Erwin</li>
+                <li class="dropdown-item">Levi</li>
+            </ul>
+        </div>
+
+        <div class="dropdown my-3">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="dropdown-item-text">Windows</li>
+                <li class="dropdown-item">Window Xp</li>
+                <li class="dropdown-item">Window 7</li>
+                <li class="dropdown-item">Window 8</li>
+                <li class="dropdown-item">Window 9</li>
+                <li class="dropdown-item">Window 10</li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item-text">Linux</li>
+                <li class="dropdown-item">Ubuntu</li>
+                <li class="dropdown-item">Mint</li>
+                <li class="dropdown-item">Cent Os</li>
+                <li class="dropdown-item">Solus</li>
+                <li class="dropdown-item">MX Linux</li>
+                <li class="dropdown-item">Zorin</li>
+            </ul>
+        </div>
+
+        <div class="dropdown dropend my-3">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu dropdown-menu-danger">
+                <li class="dropdown-item-text">Windows</li>
+                <li class="dropdown-item">Window Xp</li>
+                <li class="dropdown-item">Window 7</li>
+                <li class="dropdown-item">Window 8</li>
+                <li class="dropdown-item">Window 9</li>
+                <li class="dropdown-item">Window 10</li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item-text">Linux</li>
+                <li class="dropdown-item">Ubuntu</li>
+                <li class="dropdown-item">Mint</li>
+                <li class="dropdown-item">Cent Os</li>
+                <li class="dropdown-item">Solus</li>
+                <li class="dropdown-item">MX Linux</li>
+                <li class="dropdown-item">Zorin</li>
+            </ul>
+        </div>
+
+        <div class="dropdown dropup my-3">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="dropdown-item-text">Windows</li>
+                <li class="dropdown-item">Window Xp</li>
+                <li class="dropdown-item">Window 7</li>
+                <li class="dropdown-item">Window 8</li>
+                <li class="dropdown-item">Window 9</li>
+                <li class="dropdown-item">Window 10</li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item-text">Linux</li>
+                <li class="dropdown-item">Ubuntu</li>
+                <li class="dropdown-item">Mint</li>
+                <li class="dropdown-item">Cent Os</li>
+                <li class="dropdown-item">Solus</li>
+                <li class="dropdown-item">MX Linux</li>
+                <li class="dropdown-item">Zorin</li>
+            </ul>
+        </div>
+
+        <div class="dropdown dropstart my-3">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="dropdown-item-text">Windows</li>
+                <li class="dropdown-item disabled">Window Xp</li>
+                <li class="dropdown-item active">Window 7</li>
+                <li class="dropdown-item">Window 8</li>
+                <li class="dropdown-item">Window 9</li>
+                <li class="dropdown-item">Window 10</li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item-text">Linux</li>
+                <li class="dropdown-item">Ubuntu</li>
+                <li class="dropdown-item">Mint</li>
+                <li class="dropdown-item">Cent Os</li>
+                <li class="dropdown-item">Solus</li>
+                <li class="dropdown-item">MX Linux</li>
+                <li class="dropdown-item">Zorin</li>
+            </ul>
+        </div>
+
+        <div class="dropdown my-3">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">OS</button>
+
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                <li class="dropdown-header"><h2>Windows</h2></li>
+                <li class="dropdown-item">Window Xp</li>
+                <li class="dropdown-item">Window 7</li>
+                <li class="dropdown-item">Window 8</li>
+                <li class="dropdown-item">Window 9</li>
+                <li class="dropdown-item">Window 10</li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-header"><h2>Linux</h2></li>
+                <li class="dropdown-item">Ubuntu</li>
+                <li class="dropdown-item">Mint</li>
+                <li class="dropdown-item">Cent Os</li>
+                <li class="dropdown-item">Solus</li>
+                <li class="dropdown-item">MX Linux</li>
+                <li class="dropdown-item">Zorin</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

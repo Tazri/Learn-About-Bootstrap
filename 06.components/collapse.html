@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Colapse</title>
+</head>
+<body>
+    
+    <div class="container border border-danger rounded-3 p-3 my-3">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#paragraph-one">On</button>
+        <a href="#paragraph-one" class="btn btn-primary" data-bs-toggle='collapse'>Click me</a>
+
+        <div class="collapse my-3 border border-3 p-3" id="paragraph-one">
+            <p class='text-center text-danger'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, pariatur facilis? Praesentium sapiente quis libero! Suscipit nisi, tempore soluta voluptatem non quos nesciunt, deserunt quisquam, perspiciatis laborum velit! Veniam omnis, quos dolorum officiis voluptatum unde voluptate? Saepe ducimus voluptates, aliquam nobis neque voluptatum consequatur optio adipisci harum fugiat aperiam eveniet earum, dolorem incidunt asperiores iste porro illo omnis nostrum dolores exercitationem, unde quae ratione! Nemo quas molestiae dolorum vel recusandae consequatur hic amet tempora impedit maxime? Ipsam incidunt deleniti odit natus ullam quis saepe ad nulla ea nemo iste eaque eius praesentium cumque animi, error sunt blanditiis veritatis est. Ea.</p>
+        </div>
+    </div>
+
+    <div class="container border border-danger rounded p-3 my-3">
+        <button class="btn btn-primary" data-bs-toggle='collapse' data-bs-target=".multi">Open</button>
+
+        <div class="row justify-content-between mt-3">
+            <div class="collapse multi col-md-5 border border-success p-3 bg-dark text-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae quas maxime consequatur nihil voluptatum, quam, incidunt vitae perspiciatis eveniet eius in consequuntur culpa doloribus vel illo. Fugit voluptas praesentium nemo aliquid, id ipsum officiis, esse autem atque nisi beatae facere natus dolorum illum assumenda voluptate. Dolores tenetur nulla vitae.
+            </div>
+
+            <div class="collapse multi col-md-5 border border-primary p-3 text-center text-primary bg-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae quas maxime consequatur nihil voluptatum, quam, incidunt vitae perspiciatis eveniet eius in consequuntur culpa doloribus vel illo. Fugit voluptas praesentium nemo aliquid, id ipsum officiis, esse autem atque nisi beatae facere natus dolorum illum assumenda voluptate. Dolores tenetur nulla vitae.
+            </div>
+        </div>
+    </div>
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
