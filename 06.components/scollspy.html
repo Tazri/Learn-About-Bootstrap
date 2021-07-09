@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>ScrollSpy</title>
+    <style>
+        .div{
+            height : 70vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- start navbar -->
+    <nav class="navbar navbar-ligth bg-dark sticky-top" id="navbar">
+        <div class="container">
+            <!-- navbar logo -->
+            <a href="#" class="navbar-brand">Navbar</a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#first" class="nav-link">First</a></li>
+                <li class="nav-item"><a href="#second" class="nav-link">Second</a></li>
+                <li class="nav-item"><a href="#third" class="nav-link">Third</a></li>
+                <li class="nav-item"><a href="#last" class="nav-link">Last</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start content -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="container" tabindex="0">
+        <div class="div" id="first">
+            <div class="row h-100 w-100 bg-primary justify-content-center align-items-center rounded-3">
+                <h1 class="text-center text-dark">First</h1>
+            </div>
+        </div>
+
+        <div class="div" id="second">
+            <div class="row justify-content-center align-items-center h-100 w-100 bg-success align-items-center rounded-3">
+                <h1 class="text-center text-light">Second</h1>
+            </div>
+        </div>
+
+        <div class="div" id="third">
+            <div class="row justify-content-center align-items-center h-100 w-100 bg-dark align-items-center rounded-3">
+                <h1 class="text-center text-danger">Third</h1>
+            </div>
+        </div>
+
+        <div class="div" id="last">
+            <div class="row justify-content-center align-items-center h-100 w-100 bg-danger align-items-center rounded-3">
+                <h1 class="text-center text-dark">Last</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar'
+        })
+    </script>
+</body>
+</html>

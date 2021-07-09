@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Popover</title>
+</head>
+<body>
+    
+    <div class="container border-5 p-5 my-5 border-primary rounded-pill">
+
+    </div>
+
+    <div class="container mt-3 p-3 border border-danger rounded-3">
+        <button class="btn btn-danger" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="This is top" data-bs-content="This is content inside the popover">Top</button>
+        <button class="btn btn-primary mx-3" data-bs-toggle="popover" data-bs-placement="right" data-bs-title="This is right" data-bs-content="This is content inside the popover" >Right</button>
+        <button class="btn btn-warning me-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="This is bottom" data-bs-content="This is content inside the popover">Botttom</button>
+        <button class="btn btn-success" data-bs-toggle="popover" data-bs-placement="left" data-bs-title="This is left" data-bs-content="This is content inside the popover">Left</button>
+        <button class="btn btn-danger ms-3" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-title="This is top" data-bs-content="This is content inside the popover">Top</button>
+    </div>
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+        trigger: 'focus'
+        })
+    </script>
+</body>
+</html>
